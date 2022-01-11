@@ -2,7 +2,7 @@
 
 $test = "connection page is working";
 
-$dircon = new mysqli("localhost", "chubukas", "student55", "cryptoproject");
+$dircon = new mysqli("localhost", "chubukas", "student55", "aitcrypto");
 
 /**
  * 
@@ -24,7 +24,7 @@ class connection
 		$this->host = "localhost";
 		$this->user = "chubukas";
 		$this->psd = "student55";
-		$this->db = "cryptoproject";
+		$this->db = "aitcrypto";
 		$this->connecting = new mysqli($this->host, $this->user, $this->psd, $this->db);
 
 		if ($this->connecting->error) {
