@@ -28,54 +28,55 @@ class Acceptwithdraw extends connection
         if ($takenaction) 
         {
 
-            $to = $email;
-            $subject = 'Payment Confirmation';
-            $from = $email;
+            // $to = $email;
+            // $subject = 'Payment Confirmation';
+            // $from = $email;
 
             
-            // To send HTML mail, the Content-type header must be set
-            $headers  = 'MIME-Version: 1.0' . "\r\n";
-            $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            // // To send HTML mail, the Content-type header must be set
+            // $headers  = 'MIME-Version: 1.0' . "\r\n";
+            // $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         
-            // Create email headers
-            $headers .= 'From: '.$from."\r\n".
-                'Reply-To: '.$from."\r\n" .
-                'X-Mailer: PHP/' . phpversion();
+            // // Create email headers
+            // $headers .= 'From: '.$from."\r\n".
+            //     'Reply-To: '.$from."\r\n" .
+            //     'X-Mailer: PHP/' . phpversion();
 
             
-            $links='';
+            // $links='';
 
-            if ($coin == "BitCoin") {
-                $links = 'https://www.blockchain.com/btc/tx/'.$coinsuccess.'';
-            }
+            // if ($coin == "BitCoin") {
+            //     $links = 'https://www.blockchain.com/btc/tx/'.$coinsuccess.'';
+            // }
 
-              elseif ($coin == "Ethereum") {
-                $links = 'https://www.blockchain.com/eth/tx/'.$coinsuccess.'';
+            //   elseif ($coin == "Ethereum") {
+            //     $links = 'https://www.blockchain.com/eth/tx/'.$coinsuccess.'';
 
-              }
+            //   }
 
 
-            // Compose a simple HTML email message
-            $message = '<html><body>';
-            $message .= '<div style="color:black;font-size:18px;">';
-            $message .= '<p>Dear Esteemed Investor,</p>';
-            $message .= '<p>Your withdrawal has been processed and funds credited to your ' .$coin. ' Wallet.</p>';
-            $message .= '<p>See more details below.</p>';
-            $message .= '<p>Amount:' .$calculate.'('.$amount.'USD)</p>';
-            $message .= '<p>Transaction ID: <a href="'.$links.'">'.$links.'</a> </p>';
-            $message .= '</div>';
-            $message .= '<br/><br/><br/><br/><br/>';
-            $message .= '<div style="color:black;font-size:12px;">';
-            $message .= '<p>Best Regards,<br/> Vatican Investment Team.</p>';
-            $message .= '</div>';
-            $message .= '</body></html>';
+            // // Compose a simple HTML email message
+            // $message = '<html><body>';
+            // $message .= '<div style="color:black;font-size:18px;">';
+            // $message .= '<p>Dear Esteemed Investor,</p>';
+            // $message .= '<p>Your withdrawal has been processed and funds credited to your ' .$coin. ' Wallet.</p>';
+            // $message .= '<p>See more details below.</p>';
+            // $message .= '<p>Amount:' .$calculate.'('.$amount.'USD)</p>';
+            // $message .= '<p>Transaction ID: <a href="'.$links.'">'.$links.'</a> </p>';
+            // $message .= '</div>';
+            // $message .= '<br/><br/><br/><br/><br/>';
+            // $message .= '<div style="color:black;font-size:12px;">';
+            // $message .= '<p>Best Regards,<br/> Vatican Investment Team.</p>';
+            // $message .= '</div>';
+            // $message .= '</body></html>';
 
-            if(mail($to, $subject, $message, $headers))
-            {
-                // echo 'Your mail has been sent successfully.';
-                echo "Successfully Approved!!!";
-            }
+            // if(mail($to, $subject, $message, $headers))
+            // {
+            //     // echo 'Your mail has been sent successfully.';
+            //     echo "Successfully Approved!!!";
+            // }
 
+            echo "Successfully Approved!!!";
         }
     }
 }

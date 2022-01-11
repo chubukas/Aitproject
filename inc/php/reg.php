@@ -61,49 +61,49 @@ if (isset($_POST["userbutton"])) {
 
 
 
-					$to = $email;
-					$subject = 'Welcome to Vatican Investiment Limited';
-					$from = $email;
+					// $to = $email;
+					// $subject = 'Welcome to Vatican Investiment Limited';
+					// $from = $email;
 
 					
-					// To send HTML mail, the Content-type header must be set
-					$headers  = 'MIME-Version: 1.0' . "\r\n";
-					$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+					// // To send HTML mail, the Content-type header must be set
+					// $headers  = 'MIME-Version: 1.0' . "\r\n";
+					// $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 				
-					// Create email headers
-					$headers .= 'From: '.$from."\r\n".
-						'Reply-To: '.$from."\r\n" .
-						'X-Mailer: PHP/' . phpversion();
+					// // Create email headers
+					// $headers .= 'From: '.$from."\r\n".
+					// 	'Reply-To: '.$from."\r\n" .
+					// 	'X-Mailer: PHP/' . phpversion();
 					
-					// Compose a simple HTML email message
-					$message = '<html><body>';
-					$message .= '<div style="color:black;font-size:18px;">';
-					$message .= '<p>Dear Esteemed Investor,</p>';
-					$message .= '<p>We are glad you have decided to partner with Vatican Investiment Limited.</p>';
-					$message .= '<p>Here are your login details.</p>';
-					$message .= '<p>Email: ' .$email.'</p>';
-					$message .= '<p>Password: xxxxxxxxxx.</p>';
-					$message .= '</div>';
-					$message .= '<br/><br/><br/><br/><br/>';
-					$message .= '<div style="color:black;font-size:12px;">';
-					$message .= '<p>Best Regards,<br/> Vatican Investment Team.</p>';
-					$message .= '</div>';
-					$message .= '</body></html>';
+					// // Compose a simple HTML email message
+					// $message = '<html><body>';
+					// $message .= '<div style="color:black;font-size:18px;">';
+					// $message .= '<p>Dear Esteemed Investor,</p>';
+					// $message .= '<p>We are glad you have decided to partner with Vatican Investiment Limited.</p>';
+					// $message .= '<p>Here are your login details.</p>';
+					// $message .= '<p>Email: ' .$email.'</p>';
+					// $message .= '<p>Password: xxxxxxxxxx.</p>';
+					// $message .= '</div>';
+					// $message .= '<br/><br/><br/><br/><br/>';
+					// $message .= '<div style="color:black;font-size:12px;">';
+					// $message .= '<p>Best Regards,<br/> Vatican Investment Team.</p>';
+					// $message .= '</div>';
+					// $message .= '</body></html>';
 
-					if(mail($to, $subject, $message, $headers))
-					{
-						// echo 'Your mail has been sent successfully.';
-						echo json_encode(["resp"=>"registered"]);
-					}
-					else
-					{
-						// echo 'Unable to send email. Please try again.';
-						echo json_encode(["resp"=>"Unable to send email. Please try again"]);
-					}
-
-					// echo json_encode(["resp"=>"registered"]);
+					// if(mail($to, $subject, $message, $headers))
+					// {
+					// 	// echo 'Your mail has been sent successfully.';
+					// 	echo json_encode(["resp"=>"registered"]);
+					// }
+					// else
+					// {
+					// 	// echo 'Unable to send email. Please try again.';
+					// 	echo json_encode(["resp"=>"Unable to send email. Please try again"]);
+					// }
 
 					// echo json_encode(["resp"=>"registered"]);
+
+					echo json_encode(["resp"=>"registered"]);
 				}else{
 					echo json_encode(["resp"=>"Failed please try again"]);
 					die();
