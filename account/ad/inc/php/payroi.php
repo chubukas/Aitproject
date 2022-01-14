@@ -61,7 +61,7 @@ echo '
                                   
                                     <td>
                                         <button data-toggle="tooltip" title="Credit daily returns" class="pd-setting-ed">
-                                            '.$date->format("Y").'
+                                            '.$date.'
                                         </button>
                                     </td>
                                     <td>
