@@ -38,7 +38,7 @@ $amount = new Operates;
                                     </div>
                                 </div>
                                 <div class="income-range">
-                                    <p>MY WALLET</p>
+                                    <p>MY WALLET </p>
                                     <span class="income-percentange bg-blue"><span class="counter"></span> <i class="fa fa-bolt"></i>
                                     </span>
                                    
@@ -121,13 +121,13 @@ $amount = new Operates;
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Minimum Investment</span>
                                                 </td>
-                                                <td>&pound;3000.00</td>
+                                                <td>Less than &pound;10,000.00</td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Return on Investment</span>
                                                 </td>
-                                                <td>12% Monthly</td>
+                                                <td>9% Monthly</td>
                                             </tr>
                                         </tbody>
                                         <div>
@@ -138,10 +138,10 @@ $amount = new Operates;
                                     </table>
                                 </div>
                                     <br>
-                                    <form onsubmit="investments('basicAmount','basicbtn',28,12)">
+                                    <form onsubmit="investments('basicAmount','basicbtn',28,9)">
                                     <div class="input-group mg-b-pro-edt">
                                         <span class="input-group-addon"><i aria-hidden="true">&pound;</i></span>
-                                        <input type="number" name="basicAmount" id="basicAmount" class="form-control" placeholder="Amount" min="3000">
+                                        <input type="number" name="basicAmount" id="basicAmount" class="form-control" placeholder="Amount">
                                         <input type="hidden" name="userid" id="userid" value="<?php echo $_SESSION['id'] ?>">
                                     </div>
                                     <button class="mb-2 btn btn-sm btn-outline-light" name="investbtn" id="basicbtn">INVEST</button>
@@ -164,13 +164,13 @@ $amount = new Operates;
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Minimum Investment</span>
                                                 </td>
-                                                <td>&pound;10,000</td>
+                                                <td>Less than &pound;200,000</td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Return on Investment</span>
                                                 </td>
-                                                <td>20% Monthly</td>
+                                                <td>15% Monthly</td>
                                             </tr>
                                         </tbody>
                                         <div>
@@ -181,10 +181,10 @@ $amount = new Operates;
                                     </table>
                                 </div>
                                 <br>
-                                <form onsubmit="investments('standardAmount','standardbtn',28,20)">
+                                <form onsubmit="investments('standardAmount','standardbtn',28,15)">
                                     <div class="input-group mg-b-pro-edt">
                                         <span class="input-group-addon"><i aria-hidden="true">&pound;</i></span>
-                                        <input type="number" name="standardAmount" id="standardAmount" class="form-control" placeholder="Amount" min="10000">
+                                        <input type="number" name="standardAmount" id="standardAmount" class="form-control" placeholder="Amount">
                                         <input type="hidden" name="userid" id="userid" value="<?php echo $_SESSION['id'] ?>">
                                     </div>
                                     <button class="mb-2 btn btn-sm btn-outline-light" name="investbtn" id="standardbtn">INVEST</button>
@@ -207,13 +207,13 @@ $amount = new Operates;
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Minimum Investment</span>
                                                 </td>
-                                                <td>&pound;100,000.00</td>
+                                                <td>More than &pound;200,000.00</td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <span class="text-light font-weight-bold font-bold">Return on Investment</span>
                                                 </td>
-                                                <td>28% Monthly</td>
+                                                <td>25% Monthly</td>
                                             </tr>
                                         </tbody>
                                         <div>
@@ -224,10 +224,10 @@ $amount = new Operates;
                                     </table>
                                 </div>
                                 <br>
-                                <form onsubmit="investments('premiumAmount','premiumbtn',28,28)">
+                                <form onsubmit="investments('premiumAmount','premiumbtn',28,25)">
                                     <div class="input-group mg-b-pro-edt">
                                        <span class="input-group-addon"><i aria-hidden="true">&pound;</i></span>
-                                        <input type="number" name="premiumAmount" id="premiumAmount" class="form-control" placeholder="Amount" min="100000">
+                                        <input type="number" name="premiumAmount" id="premiumAmount" class="form-control" placeholder="Amount">
                                         <input type="hidden" name="userid" id="userid" value="<?php echo $_SESSION['id'] ?>">
                                     </div>
                                     <button class="mb-2 btn btn-sm btn-outline-light" name="investbtn" id="premiumbtn">INVEST</button>

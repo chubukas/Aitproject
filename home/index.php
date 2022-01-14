@@ -70,15 +70,15 @@
             </div>
 
 
-
             <div class="row">
                 <!-- Single Course Area -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="single-feature-area mb-100 text-center">
                         <!-- <i class="icon-safebox"></i> -->
                         <h3>BASIC PLAN / PACKAGE </h3>
-                        <p><b>Plan ranges from: (3000 &pound; - 9,999 &pound;) </b></p>
-                        <p><b>Monthly return: 12% </b></p>
+                        
+                        <p><b>Plan ranges from: (Less than 10,000 &pound;) </b></p>
+                        <p><b>Monthly return: 9% </b></p>
                         <!-- <p><b>Total return: 35% </b></p> -->
                         <p><b>Period: 28 Days.</b></p>
                        
@@ -90,8 +90,8 @@
                     <div class="single-feature-area active mb-100 text-center">
                         <!-- <i class="icon-bitcoin"></i> -->
                         <h3>PREMIUM PLAN / PACKAGES </h3>
-                        <p><b> Plan ranges from: (10,000 &pound; - 99,999 &pound;)</b></p>
-                        <p><b>Monthly return: 20% </b></p>
+                        <p><b> Plan ranges from: (Less than 200,000 &pound;)</b></p>
+                        <p><b>Monthly return: 15% </b></p>
                         <!-- <p><b>Total Return: 65%</b></p> -->
                         <p><b>Period: 28 Days </b></p>
                     </div>
@@ -102,8 +102,8 @@
                     <div class="single-feature-area mb-100 text-center">
                         <!-- <i class="icon-exchange"></i> -->
                         <h3>EXECUTIVE PLAN / PACKAGES  </h3>
-                        <p><b>Plan ranges from: (100,000 &pound; and it has no LIMIT) </b></p>
-                        <p><b>Monthly return : 28%</b></p>
+                        <p><b>Plan ranges from: (More than 200,000 &pound;) </b></p>
+                        <p><b>Monthly return : 25%</b></p>
                         <!-- <p><b>Total Return: 112%</b></p> -->
                         <p><b>Period: 28 Days </b></p>
                     </div>

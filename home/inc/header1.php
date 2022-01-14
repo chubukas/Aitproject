@@ -36,7 +36,7 @@ if (isset($_GET["regx"])) {
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
-_smartsupp.key = '1a7b221a7a0f08aa1cfe1cd687cf6f92daa056a0';
+_smartsupp.key = '7f79e0b3025501d26999331f8c9d1566d230cfe5';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -44,6 +44,7 @@ window.smartsupp||(function(d) {
   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 </script>
+
 
 
 

@@ -40,7 +40,6 @@ class Payroi extends connection
                 // $type = $transdata["transaction_type"]; 
                 // $type = $transdata["transaction_type"]; 
                 $transactpercent = $transdata["roi_percent"];
-
                 $roiinvest  =    (($amount * $transactpercent ) / 100 );  
 
                 $userdetail = $this->connect()->query("SELECT * FROM crypto_users WHERE user_id = '$transuserid'");
@@ -62,7 +61,7 @@ echo '
                                   
                                     <td>
                                         <button data-toggle="tooltip" title="Credit daily returns" class="pd-setting-ed">
-                                            '.$date.'
+                                            '.$date->format("Y").'
                                         </button>
                                     </td>
                                     <td>
